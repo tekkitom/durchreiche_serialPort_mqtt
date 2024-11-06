@@ -14,6 +14,8 @@ SOURCES += \
     portwrapper_ma.cpp
 
 HEADERS += \
+    async_mqtt/include/async_mqtt/all.hpp \
+    async_mqtt/include/async_mqtt/client.hpp \
     frmmain.h \
     portwrapper_ma.h
 
