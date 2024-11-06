@@ -1,0 +1,116 @@
+\doxysection{Port\+Wrapper\+\_\+ma Klassenreferenz}
+\hypertarget{classPortWrapper__ma}{}\label{classPortWrapper__ma}\index{PortWrapper\_ma@{PortWrapper\_ma}}
+
+
+Klassendiagramm für Port\+Wrapper\+\_\+ma\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classPortWrapper__ma__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Port\+Wrapper\+\_\+ma\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classPortWrapper__ma__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Öffentliche Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPortWrapper__ma_ada8f90e6b85605b62118c5a7c4413d85}{select\+Ascii\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Ascii\+Mode auswählen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPortWrapper__ma_a9e7ca7c679fa595b1fe8d53f51064a74}{send\+Char}} (char sendC)
+\begin{DoxyCompactList}\small\item\em ein Zeichen Senden \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classPortWrapper__ma_a3f5c835b9eaf35f12cf391c9027bc598}{get\+Rec\+String}} ()
+\begin{DoxyCompactList}\small\item\em Inhalt des Empfangspuffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPortWrapper__ma_a273fded3caa499fb3ec71e4280acef31}\label{classPortWrapper__ma_a273fded3caa499fb3ec71e4280acef31} 
+{\bfseries Port\+Wrapper\+\_\+ma} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+QList$<$ QSerial\+Port\+Info $>$ \mbox{\hyperlink{classPortWrapper__ma_a884e9d3db93438b99b17564ea382b8b4}{get\+Serial\+Port\+List}} ()
+\begin{DoxyCompactList}\small\item\em Liste der Ports. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPortWrapper__ma_afb461f40dcdd3b2206e49fbab5158cc9}{open\+Port}} (int port\+Nr)
+\begin{DoxyCompactList}\small\item\em Port öffnen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\Hypertarget{classPortWrapper__ma_a3f5c835b9eaf35f12cf391c9027bc598}\label{classPortWrapper__ma_a3f5c835b9eaf35f12cf391c9027bc598} 
+\index{PortWrapper\_ma@{PortWrapper\_ma}!getRecString@{getRecString}}
+\index{getRecString@{getRecString}!PortWrapper\_ma@{PortWrapper\_ma}}
+\doxysubsubsection{\texorpdfstring{getRecString}{getRecString}}
+{\footnotesize\ttfamily QString Port\+Wrapper\+\_\+ma\+::get\+Rec\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Inhalt des Empfangspuffers. 
+
+\begin{DoxyReturn}{Rückgabe}
+String des Inhalts (mit \textbackslash{}n als Zeilenumbruch) 
+\end{DoxyReturn}
+\Hypertarget{classPortWrapper__ma_a884e9d3db93438b99b17564ea382b8b4}\label{classPortWrapper__ma_a884e9d3db93438b99b17564ea382b8b4} 
+\index{PortWrapper\_ma@{PortWrapper\_ma}!getSerialPortList@{getSerialPortList}}
+\index{getSerialPortList@{getSerialPortList}!PortWrapper\_ma@{PortWrapper\_ma}}
+\doxysubsubsection{\texorpdfstring{getSerialPortList()}{getSerialPortList()}}
+{\footnotesize\ttfamily QList$<$ QSerial\+Port\+Info $>$ Port\+Wrapper\+\_\+ma\+::get\+Serial\+Port\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Liste der Ports. 
+
+\begin{DoxyReturn}{Rückgabe}
+Liste
+\end{DoxyReturn}
+fragt im System die Liste der Seriellen Ports ab und gibt sie zurück. \Hypertarget{classPortWrapper__ma_afb461f40dcdd3b2206e49fbab5158cc9}\label{classPortWrapper__ma_afb461f40dcdd3b2206e49fbab5158cc9} 
+\index{PortWrapper\_ma@{PortWrapper\_ma}!openPort@{openPort}}
+\index{openPort@{openPort}!PortWrapper\_ma@{PortWrapper\_ma}}
+\doxysubsubsection{\texorpdfstring{openPort()}{openPort()}}
+{\footnotesize\ttfamily void Port\+Wrapper\+\_\+ma\+::open\+Port (\begin{DoxyParamCaption}\item[{int}]{port\+Nr }\end{DoxyParamCaption})}
+
+
+
+Port öffnen. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em port\+Nr} & Nr des Ports\\
+\hline
+\end{DoxyParams}
+Öffnet den seriellen Port. Die nr ist aus Serial\+Port\+List (siehe \doxylink{classPortWrapper__ma_a884e9d3db93438b99b17564ea382b8b4}{get\+Serial\+Port\+List()}). \Hypertarget{classPortWrapper__ma_ada8f90e6b85605b62118c5a7c4413d85}\label{classPortWrapper__ma_ada8f90e6b85605b62118c5a7c4413d85} 
+\index{PortWrapper\_ma@{PortWrapper\_ma}!selectAsciiMode@{selectAsciiMode}}
+\index{selectAsciiMode@{selectAsciiMode}!PortWrapper\_ma@{PortWrapper\_ma}}
+\doxysubsubsection{\texorpdfstring{selectAsciiMode}{selectAsciiMode}}
+{\footnotesize\ttfamily void Port\+Wrapper\+\_\+ma\+::select\+Ascii\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Ascii\+Mode auswählen. 
+
+wählt zur Kommuniaktion den Modus ASCII (Terminal) aus. \Hypertarget{classPortWrapper__ma_a9e7ca7c679fa595b1fe8d53f51064a74}\label{classPortWrapper__ma_a9e7ca7c679fa595b1fe8d53f51064a74} 
+\index{PortWrapper\_ma@{PortWrapper\_ma}!sendChar@{sendChar}}
+\index{sendChar@{sendChar}!PortWrapper\_ma@{PortWrapper\_ma}}
+\doxysubsubsection{\texorpdfstring{sendChar}{sendChar}}
+{\footnotesize\ttfamily void Port\+Wrapper\+\_\+ma\+::send\+Char (\begin{DoxyParamCaption}\item[{char}]{sendC }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+ein Zeichen Senden 
+
+
+\begin{DoxyParams}{Parameter}
+{\em sendC} & Zeichen\\
+\hline
+\end{DoxyParams}
+Die Methode sendet ein Zeichen an die serielle Schnittstelle. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+portwrapper\+\_\+ma.\+h\item 
+portwrapper\+\_\+ma.\+cpp\end{DoxyCompactItemize}

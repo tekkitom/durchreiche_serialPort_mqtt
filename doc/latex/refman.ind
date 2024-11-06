@@ -1,0 +1,34 @@
+\begin{theindex}
+
+  \item {getRecString}
+    \subitem {PortWrapper\_ma}, \hyperpage{8}
+  \item {getSerialPortList}
+    \subitem {PortWrapper\_ma}, \hyperpage{8}
+
+  \indexspace
+
+  \item {openPort}
+    \subitem {PortWrapper\_ma}, \hyperpage{8}
+
+  \indexspace
+
+  \item {PortWrapper\_ma}, \hyperpage{7}
+    \subitem {getRecString}, \hyperpage{8}
+    \subitem {getSerialPortList}, \hyperpage{8}
+    \subitem {openPort}, \hyperpage{8}
+    \subitem {selectAsciiMode}, \hyperpage{9}
+    \subitem {sendChar}, \hyperpage{9}
+
+  \indexspace
+
+  \item {selectAsciiMode}
+    \subitem {PortWrapper\_ma}, \hyperpage{9}
+  \item {sendChar}
+    \subitem {PortWrapper\_ma}, \hyperpage{9}
+  \item {Serial}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Widget}, \hyperpage{10}
+
+\end{theindex}

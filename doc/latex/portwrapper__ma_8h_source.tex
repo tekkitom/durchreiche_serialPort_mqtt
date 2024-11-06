@@ -1,0 +1,46 @@
+\doxysection{portwrapper\+\_\+ma.\+h}
+\hypertarget{portwrapper__ma_8h_source}{}\label{portwrapper__ma_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PORTWRAPPER\_MA\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PORTWRAPPER\_MA\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QSerialPort>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QSerialPortInfo>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPortWrapper__ma}{PortWrapper\_ma}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classPortWrapper__ma}{PortWrapper\_ma}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00022\ \ \ \ \ QList<QSerialPortInfo>\ \mbox{\hyperlink{classPortWrapper__ma_a884e9d3db93438b99b17564ea382b8b4}{getSerialPortList}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPortWrapper__ma_afb461f40dcdd3b2206e49fbab5158cc9}{openPort}}(\textcolor{keywordtype}{int}\ portNr);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPortWrapper__ma_ada8f90e6b85605b62118c5a7c4413d85}{selectAsciiMode}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPortWrapper__ma_a9e7ca7c679fa595b1fe8d53f51064a74}{sendChar}}(\textcolor{keywordtype}{char}\ sendC);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ QString\ \mbox{\hyperlink{classPortWrapper__ma_a3f5c835b9eaf35f12cf391c9027bc598}{getRecString}}();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ signals:}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ readData();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00068\ \ \ \ \ QSerialPort\ serial;}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00071\ \ \ \ \ QList<QSerialPortInfo>\ portList;}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ \ \ \ \ QByteArray\ recByteArray;}
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PORTWRAPPER\_MA\_H}}
+
+\end{DoxyCode}
